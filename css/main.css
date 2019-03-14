@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden
+{
+	display: none;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+.column {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+}
+
+.col1 {
+	background-color: pink;
+}
+
+.col2 {
+	background-color: red; 
+}
+
+.col3, .col4 {
+	display: hidden;
+}
+
+@media screen and (min-width: 641px) {
+	.container {
+		display: flex;
+	}
+
+	.col1 {
+		background-color: blue;
+	}
+
+	.col2 {
+		background-color: purple;
+	}
+
+	.col3 {
+		background-color: grey;
+	}
+
+	.col4 {
+		background-color: brown;
+	}
+}
